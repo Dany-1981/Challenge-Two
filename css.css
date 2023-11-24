@@ -1,0 +1,136 @@
+*{
+    font-family: 'Outfit', sans-serif;
+}
+:root{
+    /* icon color */
+    --reccolor:hsl(0, 100%, 67%);
+    --memory:hsl(39, 100%, 56%);
+    --verbal:hsl(166, 100%, 37%);
+    --visual:hsl(234, 85%, 45%);
+    /* background color */
+    --sbackground:hsl(252, 100%, 67%);
+    --ebackground:hsl(241, 81%, 54%);
+    --scircle: hsla(256, 72%, 46%, 1);
+    --ecircle: hsla(241, 72%, 46%, 0);
+    /* color of font */
+    --White: hsl(0, 0%, 100%);
+    --Pale: hsl(221, 100%, 96%);
+    --Light : hsl(241, 100%, 89%);
+    --buttom : hsl(224, 30%, 27%);
+}
+.parent{
+    width: 741px;
+    height: 512px;
+    border-radius: 32px;
+    background: #FFF;
+    box-shadow: 11px 11px 12px 6px rgba(0, 0, 0, 0.26);
+    margin: auto auto;
+    display: flex;
+
+}
+.parent .result{
+    width: 50%;
+    border-radius: 35px;
+    background: linear-gradient(180deg, var(--sbackground) 0%,var(--ebackground) 100%);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+#title{
+    color:var(--Light);
+    text-transform: capitalize;
+    margin: unset;
+}
+.circle{
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, var(--scircle) 0%, var(--ecircle) 100%);
+    margin: auto;
+}
+.circle div:first-child{
+    color: var(--White);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    padding-top: 59px;
+    padding-bottom: 10px;
+}
+.circle div:last-child{
+    color: var(--Light);
+}
+.text{
+    color: var(--White);
+    width: 249px;
+}
+.text h1::first-letter , .text p::first-letter{
+text-transform: uppercase;
+}
+.summary{
+    margin:43px auto;
+    width: 289px;
+    text-transform: capitalize;
+}
+.summary h1{
+    margin-bottom: 31px;
+    margin-top: unset;
+}
+.summary .contant{
+    display: grid;
+    gap: 15px;
+}
+.summary .contant #sum-part{
+    width: 100%;
+    height:55px;
+    border-radius: 12px;
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+}
+#text{
+    float: left;
+    display: flex;
+}
+.per{
+    float: right;
+    margin-right: 24px;
+}
+#text .image{
+    width:20px;
+    height:20px;
+    margin:auto 11px auto 18px;
+}
+.rec p{
+    color: var(--reccolor);
+}
+.mem p{
+    color: var(--memory);
+}
+.ver p{
+    color: var(--verbal);
+}
+.vis p{
+    color: var(--visual);
+}
+p span{
+    margin-left: 5px;
+    color: hsla(256, 5%, 58%, 1);
+}
+button{
+    width: 100%;
+    border-radius: 27.5px;
+    height: 55px;
+    background-color: var(--buttom);
+    margin-top: 45px;
+    color: var(--White);
+    font-weight: 300;
+    font-size:18px;
+}
